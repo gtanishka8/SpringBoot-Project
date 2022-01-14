@@ -10,10 +10,12 @@ import javax.persistence.Id;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 
+@Entity
 @Getter
 @Setter
-@Entity
+@Accessors
 public class UserModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -38,5 +40,6 @@ public class UserModel {
 	public UserModel() {
 		super();
 	}
+
 	
 }
